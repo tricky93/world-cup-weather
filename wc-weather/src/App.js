@@ -31,8 +31,9 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1>
-            <img src={football} className="App-logo" />World Cup Weather App
-            <img src={football} className="App-logo" />
+            <img src={football} alt="A football" className="App-logo" />World
+            Cup Weather App
+            <img src={football} alt="A football" className="App-logo" />
           </h1>
 
           <select onChange={this.handleSelect}>
