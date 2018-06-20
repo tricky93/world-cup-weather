@@ -22,9 +22,7 @@ class CityWeather extends React.Component {
 
     return (
       <div>
-        <h1 className="App-city">
-          {currentCity}, {cities[currentCity].sys.country}
-        </h1>
+        <h1 className="App-city">{currentCity}</h1>
         <h1>
           <span>{cities[currentCity].main.temp}°C</span>
         </h1>

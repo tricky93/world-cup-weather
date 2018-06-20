@@ -16,7 +16,7 @@ class DynamicMap extends React.Component {
       coordinates[this.props.currentCity].lng
     ];
     return (
-      <Map center={position} zoom={13}>
+      <Map center={position} zoom={12}>
         <TileLayer
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
           url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
