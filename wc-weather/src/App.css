@@ -1,9 +1,17 @@
 body {
-  background-color: rgb(169, 220, 240);
+  background-image: url("./data/sky2.jpg");
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 table {
   border-collapse: collapse;
+  margin-top: 60px;
+  font-size: 20px;
 }
 
 table,
@@ -26,11 +34,12 @@ td {
   padding: 20px;
   color: white;
   font-family: "Raleway";
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .App-city {
   font-size: 2em;
+  margin-top: 50px;
 }
 
 @keyframes App-logo-spin {
@@ -43,9 +52,5 @@ td {
 }
 
 .options {
-  font-size: 30px;
-}
-
-.headername {
-  margin-top: 5px;
+  font-size: 15px;
 }
