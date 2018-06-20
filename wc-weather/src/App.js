@@ -30,9 +30,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+<<<<<<< HEAD
           <h1 className="headername">
             <img src={football} className="App-logo" />World Cup Weather App
             <img src={football} className="App-logo" />
+=======
+          <h1>
+            <img src={football} alt="A football" className="App-logo" />World
+            Cup Weather App
+            <img src={football} alt="A football" className="App-logo" />
+>>>>>>> 30519215ce341b5590ce4fbb1feb2861ad778e93
           </h1>
 
           <select className="options" onChange={this.handleSelect}>
