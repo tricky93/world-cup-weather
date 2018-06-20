@@ -30,19 +30,39 @@ class App extends Component {
       <div className="App">
         <header>
           <h1 id="header">World Cup Weather</h1>
-          <button value={"Moscow"} onClick={this.handleSelect}>
+          <button
+            class="button is-outlined is-danger"
+            value={"Moscow"}
+            onClick={this.handleSelect}
+          >
             🇷🇺 Russia
           </button>
-          <button value={"London"} onClick={this.handleSelect}>
-            🏴󠁧󠁢󠁥󠁮󠁧󠁿 England
-          </button>
-          <button value={"Panama City"} onClick={this.handleSelect}>
+          <button
+            class="button is-outlined is-danger"
+            value={"Panama City"}
+            onClick={this.handleSelect}
+          >
             🇵🇦 Panama
           </button>
-          <button value={"Tunis"} onClick={this.handleSelect}>
+          <button
+            class="button is-outlined is-danger"
+            value={"London"}
+            onClick={this.handleSelect}
+          >
+            🏴󠁧󠁢󠁥󠁮󠁧󠁿 England
+          </button>
+          <button
+            class="button is-outlined is-danger"
+            value={"Tunis"}
+            onClick={this.handleSelect}
+          >
             🇹🇳 Tunisa
           </button>
-          <button value={"Brussels"} onClick={this.handleSelect}>
+          <button
+            class="button is-outlined is-danger"
+            value={"Brussels"}
+            onClick={this.handleSelect}
+          >
             🇧🇪 Belgium
           </button>
         </header>

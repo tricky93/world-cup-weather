@@ -45,7 +45,8 @@ class CityWeather extends React.Component {
     const emojiLookUp = {
       rain: "🌧️",
       cloud: "☁️",
-      clear: "☀️"
+      clear: "☀️",
+      thunderstorm: "🌩️"
     };
     const lowerCase = description.toLowerCase();
 
@@ -54,6 +55,8 @@ class CityWeather extends React.Component {
     } else if (lowerCase.includes("clouds")) {
       return emojiLookUp.cloud;
     } else if (lowerCase.includes("clear")) {
+      return emojiLookUp.clear;
+    } else if (lowerCase.includes("thunderstorm")) {
       return emojiLookUp.clear;
     } else {
       return description;
