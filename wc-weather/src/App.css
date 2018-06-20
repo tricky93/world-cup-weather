@@ -1,5 +1,5 @@
 body {
-  background-color: aqua;
+  background-color: rgb(169, 220, 240);
 }
 
 .App {
@@ -16,6 +16,8 @@ body {
   height: 150px;
   padding: 20px;
   color: white;
+  font-family: "Raleway";
+  font-size: 30px;
 }
 
 .App-city {
@@ -29,4 +31,12 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.options {
+  font-size: 30px;
+}
+
+.headername {
+  margin-top: 5px;
 }

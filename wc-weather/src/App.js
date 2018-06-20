@@ -5,7 +5,7 @@ import shortid from "shortid";
 import City from "./City";
 import Manager from "./Manager";
 import football from "./data/ball.png";
-
+import sky from "./data/sky.png";
 class App extends Component {
   state = {
     data: []
@@ -30,12 +30,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>
+          <h1 className="headername">
             <img src={football} className="App-logo" />World Cup Weather App
             <img src={football} className="App-logo" />
           </h1>
 
-          <select onChange={this.handleSelect}>
+          <select className="options" onChange={this.handleSelect}>
             <option value={""}>Choose a city</option>
             {Object.keys(formattedData).map(city => {
               return (
@@ -52,6 +52,7 @@ class App extends Component {
         {this.state.city && (
           <Manager cities={formattedData} currentCity={this.state.city} />
         )}
+        {/* <img src={sky} /> */}
       </div>
     );
   }
