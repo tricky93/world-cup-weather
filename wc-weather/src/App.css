@@ -1,5 +1,5 @@
 body {
-  background-image: url("./data/sky2.jpg");
+  background-image: url("./data/football-field.jpg");
   background-size: cover;
 }
 
@@ -8,49 +8,36 @@ body {
   height: 100%;
 }
 
-table {
-  border-collapse: collapse;
-  margin-top: 60px;
-  font-size: 20px;
+#header {
+  font-size: 4em;
 }
 
-table,
-td {
-  border: 1px solid black;
+span {
+  padding-right: 4px;
+  font-weight: bolder;
+  font-size: 3em;
 }
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  color: #d7dae0;
 }
 
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: whitesmoke;
   font-family: "Raleway";
-  font-size: 22px;
+  font-size: 4em;
 }
 
 .App-city {
   font-size: 2em;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.options {
-  font-size: 15px;
+.leaflet-container {
+  height: 400px;
+  width: 100%;
 }

@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
-import shortid from "shortid";
 import City from "./City";
-import football from "./data/ball.png";
-import { Doughnut } from "react-chartjs-2";
+import DynamicMap from "./DynamicMap";
 import "bulma/css/bulma.css";
 
 class App extends Component {
@@ -28,36 +26,31 @@ class App extends Component {
   render() {
     const { data } = this.state;
     const formattedData = this.formatData(data);
-    console.log(formattedData);
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="headername">
-            <img src={football} alt="A football" className="App-logo" />World
-            Cup Weather App
-            <img src={football} alt="A football" className="App-logo" />
-          </h1>
-
-          <select className="options" onChange={this.handleSelect}>
-            <option selected="" value={""}>
-              Choose a city
-            </option>
-            {Object.keys(formattedData).map(city => {
-              return (
-                <option
-                  selected="selected"
-                  value={city}
-                  key={shortid.generate()}
-                >
-                  {city}
-                </option>
-              );
-            })}
-          </select>
+        <header>
+          <h1 id="header">World Cup Weather</h1>
+          <button value={"Moscow"} onClick={this.handleSelect}>
+            🇷🇺 Russia
+          </button>
+          <button value={"London"} onClick={this.handleSelect}>
+            🏴󠁧󠁢󠁥󠁮󠁧󠁿 England
+          </button>
+          <button value={"Panama City"} onClick={this.handleSelect}>
+            🇵🇦 Panama
+          </button>
+          <button value={"Tunis"} onClick={this.handleSelect}>
+            🇹🇳 Tunisa
+          </button>
+          <button value={"Brussels"} onClick={this.handleSelect}>
+            🇧🇪 Belgium
+          </button>
         </header>
-
         {this.state.city && (
-          <City cities={formattedData} currentCity={this.state.city} />
+          <div>
+            <City cities={formattedData} currentCity={this.state.city} />
+            <DynamicMap currentCity={this.state.city} cities={formattedData} />
+          </div>
         )}
       </div>
     );

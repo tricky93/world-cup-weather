@@ -1,5 +1,4 @@
 import React from "react";
-import { format } from "url";
 
 class CityWeather extends React.Component {
   render() {
@@ -24,34 +23,20 @@ class CityWeather extends React.Component {
     return (
       <div>
         <h1 className="App-city">
-          Weather in {currentCity}, {cities[currentCity].sys.country}{" "}
+          {currentCity}, {cities[currentCity].sys.country}
         </h1>
-        <h3>{cities[currentCity].main.temp}°C</h3>
+        <h1>
+          <span>{cities[currentCity].main.temp}°C</span>
+        </h1>
 
-        <table class="table" align="center">
-          <tbody>
-            <tr>
-              <td>Max Temp</td>
-              <td>{cities[currentCity].main.temp_max} °C</td>
-            </tr>
-            <tr>
-              <td>Min Temp</td>
-              <td>{cities[currentCity].main.temp_min}°C</td>
-            </tr>
-            <tr>
-              <td>Sunrise</td>
-              <td>{formattedSunrise}</td>
-            </tr>
-            <tr>
-              <td>Sunset</td>
-              <td>{formattedSunset}</td>
-            </tr>
-            <tr>
-              <td>Main Forecast</td>
-              <td>{this.emojiWeather(cities[currentCity].weather[0].main)} </td>
-            </tr>
-          </tbody>
-        </table>
+        <h1>
+          Sunrise: <span>{formattedSunrise}</span>
+          Sunset: <span>{formattedSunset}</span>
+          Main Forecast:<span>
+            {" "}
+            {this.emojiWeather(cities[currentCity].weather[0].main)}
+          </span>
+        </h1>
       </div>
     );
   }
