@@ -30,7 +30,7 @@ class CityWeather extends React.Component {
         <h1>
           Sunrise: <span>{formattedSunrise}</span>
           Sunset: <span>{formattedSunset}</span>
-          Main Forecast:<span>
+          Forecast:<span>
             {" "}
             {this.emojiWeather(cities[currentCity].weather[0].main)}
           </span>
