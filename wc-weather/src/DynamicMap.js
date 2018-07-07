@@ -3,7 +3,6 @@ import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 
 class DynamicMap extends React.Component {
   render() {
-    console.log(this.props.currentCity);
     const coordinates = {
       Tunis: { lat: 36.8189, lng: 10.16579 },
       Brussels: { lat: 50.8504, lng: 4.34878 },
