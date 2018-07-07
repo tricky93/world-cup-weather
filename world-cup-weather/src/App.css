@@ -1,0 +1,43 @@
+body {
+  background-image: url("./data/football-field.jpg");
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#header {
+  font-size: 4em;
+}
+
+span {
+  padding-right: 4px;
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.App {
+  text-align: center;
+  color: #d7dae0;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: "Raleway";
+  font-size: 4em;
+}
+
+.App-city {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
